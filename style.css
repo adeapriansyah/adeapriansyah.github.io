@@ -116,6 +116,7 @@ body p{
   padding-top: 60px;
   align-items: center;
   color: white;
+  background-color: #00064d;
   
 }
 
@@ -124,9 +125,8 @@ body p{
   justify-content: center;
   text-align: center;
   padding-top: 30px;
-  font-style: italic
-  ;
-  
+  font-style: italic;
+  background-color: #00064d;
 }
 /* Bagian Akhir About */
 
@@ -137,6 +137,7 @@ body p{
   padding-top: 60px;
   margin-top: 200px;
   color: white;
+  background-color: #00064d;
 }
 .gallery-project{
   display: flex;
@@ -145,6 +146,7 @@ body p{
   flex-wrap: wrap;
   text-align: center;
   margin-top: 30px;
+  background-color: #00064d;
 }
 .gallery-project .project-pic{
   height: 400px;
@@ -159,6 +161,7 @@ body p{
   box-shadow: 4px 7px 7px 0 black;
   transition: 400ms;
   cursor: pointer;
+  background-color: #00064d;
   
 }
 .gallery-project .project-pic:hover{
@@ -167,14 +170,6 @@ body p{
 }
 /* Bagian Akhir Project */
 
-/* Bagian Media Query */
-/* Mobile */
-@media only screen and (max-width:767px){
-  .img{
-    height: 300px;
-    width: 300px;
-  }
-}
 /* Bagian Footer */
 .footer{
   display: flex;
@@ -187,6 +182,15 @@ body p{
 .footer h1{
   color: black;
   font-weight: 600;
+}
+
+/* Bagian Media Query */
+/* Mobile */
+@media only screen and (max-width:767px){
+  .img{
+    height: 300px;
+    width: 300px;
+  }
 }
 /* Tablet */
 @media only screen and (min-width:768px) and (max-width:900px){
