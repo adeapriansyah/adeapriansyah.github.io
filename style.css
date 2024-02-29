@@ -1,0 +1,208 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #00064d;
+  height: 1000px;
+}
+body p{
+  color: white;
+}
+/* Bagian Navbar */
+.navbar{
+  background-color: #00064d;
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+.navbar ul li{
+  display: inline-block;
+  list-style: none;
+  margin-right: 10px;
+}
+.navbar .home{
+  color: orangered;
+}
+.navbar ul li a{
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  font-family: montserrat;
+  
+}
+.navbar ul li a:hover{
+  color: orangered;
+  border-top: 2px solid orange;
+  border-bottom: 2px solid orange;
+  transition: all 0.5s;
+}
+/* Akhir Navbar */
+
+/* Bagian Foto Profil */
+.photo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.img{
+  margin-top: 80px;
+  margin-bottom: 40px;
+  width: 500px;
+  height: 500px;
+  background-color: transparent;
+  background-image: url('/Foto profil.jpg');
+  background-size: cover;
+  border-radius: 50%;
+  
+  box-shadow: 0px 4px 8px 0 #e6e6e6;
+}
+/* Bagiab Akhir Foto */
+
+/* Bagian Teks Intro */
+.intro{
+  display: flex;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+  
+}
+.intro h1{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 40px;
+  padding: 10px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: white;
+}
+.intro h2{
+  font-size: 25px;
+  font-weight: 600;
+  color: orangered;
+}
+.intro p{
+  font-style: italic;
+  margin-top: 3px;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+}
+/* Bagian Akhir Teks Intro */
+
+/* Bagian Icon Sosmed */
+.icon-sosmed a{
+  text-decoration: none;
+  color: white;
+}
+/* Bagian Akhir Icon Sosmed */
+
+/* Bagian About */
+.about{
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  padding-top: 60px;
+  align-items: center;
+  color: white;
+  
+}
+
+.about-text{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 30px;
+  font-style: italic
+  ;
+  
+}
+/* Bagian Akhir About */
+
+/* Bagian Project */
+.project{
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  margin-top: 200px;
+  color: white;
+}
+.gallery-project{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 30px;
+}
+.gallery-project .project-pic{
+  height: 400px;
+  width: 300px;
+  margin: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('Pic1.jpg');
+  border: 2px solid orange;
+  border-radius: 13px;
+  box-shadow: 4px 7px 7px 0 black;
+  transition: 400ms;
+  cursor: pointer;
+  
+}
+.gallery-project .project-pic:hover{
+  filter: grayscale(1);
+  transform: scale(1.1);
+}
+/* Bagian Akhir Project */
+
+/* Bagian Media Query */
+/* Mobile */
+@media only screen and (max-width:767px){
+  .img{
+    height: 300px;
+    width: 300px;
+  }
+}
+/* Bagian Footer */
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+  padding: 10px;
+  background-color: white;
+}
+.footer h1{
+  color: black;
+  font-weight: 600;
+}
+/* Tablet */
+@media only screen and (min-width:768px) and (max-width:900px){
+  .img{
+    width: 400px;
+    height: 400px;
+  }
+}
+/* Desktop */
+@media only screen and (min-width:901px) and (max-width:1920px){
+  .intro h1{
+    text-align: center;
+  margin-top: 40px;
+  font-size: 80px;
+  padding: 10px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  }
+}
